@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玻沙維特 POSAVIT | 客製化高精密鑽孔專家</title>
+    <style>
+        /* 整體風格設定：深色科技風 */
+        body { 
+            font-family: "Segoe UI", "Microsoft JhengHei", sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            color: #e0e0e0; 
+            background-color: #0a0b10; /* 深藍黑底色 */
+        }
+
+        /* 導覽列：鈦灰色金屬感 */
+        header { 
+            background: linear-gradient(180deg, #1f2229 0%, #0a0b10 100%);
+            color: #00d4ff; 
+            padding: 1rem; 
+            text-align: center; 
+            position: fixed; 
+            width: 100%; 
+            top: 0; 
+            z-index: 100;
+            border-bottom: 1px solid #333;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+        }
+
+        /* Hero 區：加入遮罩讓金屬機台圖更顯眼 */
+        .hero { 
+            background: linear-gradient(rgba(10, 11, 16, 0.7), rgba(10, 11, 16, 0.7)), url('machine.jpg') no-repeat center center/cover; 
+            height: 70vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center; 
+            margin-top: 50px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.8);
+            margin-bottom: 10px;
+        }
+
+        /* 按鈕：霓虹藍色 */
+        button { 
+            background: #00d4ff; 
+            color: #000; 
+            border: none; 
+            padding: 15px 40px; 
+            font-size: 1.1rem; 
+            font-weight: bold;
+            cursor: pointer; 
+            border-radius: 5px;
+            transition: 0.3s;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+        }
+        button:hover { background: #ffffff; box-shadow: 0 0 25px rgba(255, 255, 255, 0.8); }
+
+        .container { max-width: 1100px; margin: auto; padding: 4rem 2rem; }
+
+        /* 標題：金屬髮絲紋效果 */
+        h2 { 
+            font-size: 2rem;
+            color: #00d4ff; 
+            border-left: 4px solid #00d4ff; 
+            padding-left: 15px; 
+            margin-top: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* 卡片：深灰金屬質感 */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { 
+            background: #161b22; 
+            border: 1px solid #30363d; 
+            padding: 2rem; 
+            border-radius: 12px; 
+            transition: 0.3s;
+        }
+        .card:hover { border-color: #00d4ff; transform: translateY(-5px); }
+        .card h3 { color: #ffffff; margin-top: 0; }
+
+        /* 表格：高科技清單風格 */
+        table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; background: #0d1117; }
+        th, td { border: 1px solid #30363d; padding: 15px; text-align: left; }
+        th { background: #1f2229; color: #00d4ff; }
+        td { color: #c9d1d9; }
+
+        /* 聯絡區塊：鈦銀面板感 */
+        .contact-form { 
+            background: linear-gradient(145deg, #1c2128, #111418); 
+            padding: 3rem; 
+            border-radius: 15px; 
+            border: 1px solid #30363d;
+            margin-top: 2rem; 
+        }
+        input, textarea, select { 
+            background: #0d1117; 
+            color: white; 
+            border: 1px solid #30363d; 
+            padding: 12px; 
+            margin: 10px 0; 
+            width: 100%;
+            border-radius: 4px;
+        }
+        input:focus { border-color: #00d4ff; outline: none; }
+
+        footer { 
+            background: #0a0b10; 
+            border-top: 1px solid #333;
+            color: #8b949e; 
+            text-align: center; 
+            padding: 3rem; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <span style="letter-spacing: 3px; font-weight: bold;">POSAVIT 玻沙維特</span> | 精密鑽孔 · 快速打樣 · 瑞士技術
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>客製化精密樣品中心</h1>
+        <p style="font-size: 1.2rem; color: #aaa;">專精瑞士 Posalux 技術 ‧ 支援高頻特殊材料 ‧ 快速原型開發</p>
+        <br>
+        <button onclick="document.getElementById('contact').scrollIntoView();">開始您的客製專案</button>
+    </div>
+</section>
+
+<div class="container">
+    <h2 id="strengths">核心技術優勢</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>±0.015mm 極致公差</h3>
+            <p>同步瑞士原廠精度，針對 AI 運算板與高速通訊模組提供最精準的微孔加工。</p>
+        </div>
+        <div class="card">
+            <h3>48H 快速打樣</h3>
+            <p>無需等待大批產線排程，針對研發測試片提供極速交貨流程，無 MOQ 限制。</p>
+        </div>
+        <div class="card">
+            <h3>特殊基板專家</h3>
+            <p>專門處理 Rogers、PTFE (鐵氟龍)、陶瓷基板等難切削高頻材料。</p>
+        </div>
+    </div>
+
+    <h2 id="services">客製化服務範圍</h2>
+    <div class="grid">
+        <div class="card" style="border-left: 4px solid #00d4ff;">
+            <h3>精密鑽孔</h3>
+            <p>微孔(Micro-drilling)、受控深度鑽孔、背鑽加工。</p>
+        </div>
+        <div class="card" style="border-left: 4px solid #00d4ff;">
+            <h3>金屬加工</h3>
+            <p>孔內金屬化(PTH)、客製化局部鍍金、鍍鎳。</p>
+        </div>
+    </div>
+
+    <h2 id="specs">技術參數表</h2>
+    <table>
+        <thead>
+            <tr><th>技術項次</th><th>規格描述</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>核心設備</td><td>Swiss Posalux High-Speed System</td></tr>
+            <tr><td>最小鑽孔徑</td><td>0.1 mm</td></tr>
+            <tr><td>定位精度</td><td>± 0.015 mm</td></tr>
+            <tr><td>支援材料</td><td>High-Tg FR4, Rogers, Teflon, Ceramic</td></tr>
+        </tbody>
+    </table>
+
+    <h2 id="contact">快速詢價與上傳 Gerber</h2>
+    <div class="contact-form">
+        <form>
+            <div class="grid" style="grid-template-columns: 1fr 1fr;">
+                <input type="text" placeholder="姓名 / 公司名稱">
+                <input type="email" placeholder="電子郵件">
+            </div>
+            <select>
+                <option>研發打樣 (1-10片)</option>
+                <option>小量客製生產</option>
+                <option>特殊材料加工</option>
+                <option>機台維修諮詢</option>
+            </select>
+            <textarea placeholder="請詳細說明您的樣品規格 (板材、孔數、特殊要求...)" rows="5"></textarea>
+            <p style="font-size: 0.8rem; color: #8b949e;">* 支援上傳 Gerber (RS-274X), ODB++, PDF 格式檔案</p>
+            <button type="button" style="width: 100%;" onclick="alert('技術部門已收到您的需求，將於 24 小時內提供評估報告。')">提交技術諮詢</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>玻沙維特有限公司 | POSAVIT CO., LTD.</p>
+    <p>桃園市龜山區南上路 290 巷 21 弄 8 號 | 03-3115817</p>
+    <p style="font-size: 0.8rem; margin-top: 20px;">© 2026 POSAVIT. All Rights Reserved. 精密鑽孔專家</p>
+</footer>
+
+</body>
+</html>
